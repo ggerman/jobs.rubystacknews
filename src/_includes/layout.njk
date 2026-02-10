@@ -7,9 +7,25 @@
   <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
 </head>
 <body>
-  <main class="container">
-    {{ content | safe }}
-  </main>
+	<header class="site-header">
+	  <div class="header-container">
+	    <a class="logo" href="{{ '/' | url }}">RubyStackNews Jobs</a>
+
+	    <nav class="main-nav">
+	      <a href="{{ '/jobs/' | url }}">Jobs</a>
+	      <a href="https://rubystacknews.com/get-in-touch/" target="_blank" rel="noopener">
+		Post a Job
+	      </a>
+	      <a href="https://rubystacknews.com" target="_blank" rel="noopener" class="external">
+		RubyStackNews →
+	      </a>
+	    </nav>
+	  </div>
+	</header>
+
+	<main class="container">
+	  {{ content | safe }}
+	</main>
 </body>
 </html>
 
