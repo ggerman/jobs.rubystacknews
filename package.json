@@ -1,0 +1,9 @@
+{
+  "name": "job-board",
+  "private": true,
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
+  }
+}
+

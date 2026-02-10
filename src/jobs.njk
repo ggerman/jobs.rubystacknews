@@ -1,0 +1,52 @@
+---
+layout: layout.njk
+title: Jobs
+---
+
+<h1>Ruby & Backend Jobs</h1>
+
+<p class="subtitle">
+  Curated, remote-friendly roles for experienced developers.
+</p>
+
+<div class="filters">
+  <button data-region="All">All</button>
+  <button data-region="Europe">Europe</button>
+  <button data-region="North America">North America</button>
+  <button data-region="LATAM">LATAM</button>
+  <button data-region="Asia-Pacific">APAC</button>
+  <button data-region="Global">Global</button>
+</div>
+
+<div id="jobs">
+  {% for job in collections.jobs %}
+    <div class="job" data-region="{{ job.data.region }}">
+      <h2>{{ job.data.title }}</h2>
+      <p class="company">{{ job.data.company }}</p>
+      <p class="meta">
+        {{ job.data.location }} — {{ job.data.region }}<br />
+        <strong>{{ job.data.salary }}</strong>
+      </p>
+      <p>{{ job.templateContent | safe }}</p>
+      <a class="apply" href="{{ job.data.apply }}" target="_blank">Apply</a>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  const buttons = document.querySelectorAll("[data-region]");
+  const jobs = document.querySelectorAll(".job");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const region = btn.dataset.region;
+      jobs.forEach(job => {
+        job.style.display =
+          region === "All" || job.dataset.region === region
+            ? "block"
+            : "none";
+      });
+    });
+  });
+</script>
+

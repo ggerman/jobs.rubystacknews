@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("jobs", (collection) =>
-    collection.getFilteredByGlob("jobs/*.md").sort((a, b) => {
+    collection.getFilteredByGlob("src/jobs/*.md").sort((a, b) => {
       return b.date - a.date;
     })
   );
