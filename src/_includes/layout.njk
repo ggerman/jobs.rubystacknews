@@ -7,25 +7,30 @@
   <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
 </head>
 <body>
-	<header class="site-header">
-	  <div class="header-container">
-	    <a class="logo" href="{{ '/' | url }}">RubyStackNews Jobs</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ '/' | url }}">RubyStackNews Jobs</a>
 
-	    <nav class="main-nav">
-	      <a href="{{ '/jobs/' | url }}">Jobs</a>
-	      <a href="https://rubystacknews.com/get-in-touch/" target="_blank" rel="noopener">
-		Post a Job
-	      </a>
-	      <a href="https://rubystacknews.com" target="_blank" rel="noopener" class="external">
-		RubyStackNews →
-	      </a>
-	    </nav>
-	  </div>
-	</header>
+      <nav class="nav">
+        <a href="{{ '/jobs/' | url }}">Jobs</a>
+        <a href="https://rubystacknews.com" target="_blank" rel="noopener">RubyStackNews</a>
+        <a href="https://rubystacknews.com/get-in-touch/" target="_blank" rel="noopener">Post a Job</a>
+      </nav>
+    </div>
+  </header>
 
-	<main class="container">
-	  {{ content | safe }}
-	</main>
+  <main class="container">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>
+        Built by <a href="https://rubystacknews.com" target="_blank" rel="noopener">RubyStackNews</a>.
+      </small>
+    </div>
+  </footer>
 </body>
+
 </html>
 
