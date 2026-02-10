@@ -116,3 +116,74 @@ a:hover {
   font-weight: 500;
 }
 
+/* ---------- Home ---------- */
+
+.hero {
+  text-align: center;
+  margin: 5rem 0 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cta.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.cta.primary:hover {
+  opacity: 0.9;
+}
+
+.cta.secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.cta.secondary:hover {
+  background: #f1f5f9;
+}
+
+/* ---------- About ---------- */
+
+.about {
+  max-width: 720px;
+  margin: 0 auto 5rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  color: var(--muted);
+}
+
