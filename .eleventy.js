@@ -1,12 +1,15 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/styles.css");
+  // Copiar assets
+  eleventyConfig.addPassthroughCopy("src/assets");
 
+  // Colección de jobs
   eleventyConfig.addCollection("jobs", (collection) =>
-    collection.getFilteredByGlob("src/jobs/*.md").sort((a, b) => b.date - a.date)
+    collection
+      .getFilteredByGlob("src/jobs/*.md")
+      .sort((a, b) => b.date - a.date)
   );
 
   return {
-    pathPrefix: "/jobs.rubystacknews/",
     dir: {
       input: "src",
       includes: "_includes",
