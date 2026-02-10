@@ -4,7 +4,7 @@ company: Acme Corp
 region: Europe
 location: Remote
 salary: €90k–€120k
-apply: https://acme.com/jobs
+apply: https://rubystacknews.com/apply-for-this-position-rubystacknews-job-board/
 date: 2026-02-10
 ---
 
