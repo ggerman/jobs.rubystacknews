@@ -1,8 +1,6 @@
 module.exports = function (eleventyConfig) {
-  // Copiar assets
   eleventyConfig.addPassthroughCopy("src/assets");
 
-  // Colección de jobs
   eleventyConfig.addCollection("jobs", (collection) =>
     collection
       .getFilteredByGlob("src/jobs/*.md")
@@ -10,6 +8,7 @@ module.exports = function (eleventyConfig) {
   );
 
   return {
+    pathPrefix: "/jobs.rubystacknews/",
     dir: {
       input: "src",
       includes: "_includes",
