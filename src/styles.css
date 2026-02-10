@@ -1,0 +1,54 @@
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: #fafafa;
+  color: #111;
+}
+
+.container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.filters button {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.job {
+  background: white;
+  border: 1px solid #e5e5e5;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.company {
+  font-weight: 600;
+}
+
+.meta {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.apply {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
