@@ -1,35 +1,15 @@
----
-layout: layout.njk
-title: jobs.rubystacknews
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title or "jobs.rubystacknews" }}</title>
 
-<section class="hero">
-  <h1>Ruby & Backend Jobs</h1>
-  <p class="subtitle">
-    A curated job board for Ruby and backend developers.
-    Remote-friendly, senior-level, and community-driven.
-  </p>
-
-  <div class="actions">
-    <a class="cta primary" href="{{ '/jobs/' | url }}">
-      Browse Jobs
-    </a>
-
-    <a class="cta secondary" href="https://rubystacknews.com" target="_blank" rel="noopener">
-      Visit RubyStackNews →
-    </a>
-  </div>
-</section>
-
-<section class="about">
-  <h2>About this board</h2>
-  <p>
-    This job board is part of <strong>RubyStackNews</strong>, a global Ruby community
-    sharing news, tools, and real-world experience.
-  </p>
-  <p>
-    Jobs here are hand-picked, focused on quality over volume,
-    and aimed at experienced backend engineers.
-  </p>
-</section>
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
+</head>
+<body>
+  <main class="container">
+    {{ content | safe }}
+  </main>
+</body>
+</html>
 
